@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onKeyPressed="#isCtrlDown" prefHeight="591.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bns.controller.SkillController">
+   <children>
+      <Label layoutX="15.0" layoutY="15.0" prefHeight="23.0" prefWidth="100.0" text="雷炎闪X坐标" />
+      <TextField fx:id="fx" layoutX="125.0" layoutY="15.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label layoutX="15.0" layoutY="45.0" prefHeight="23.0" prefWidth="100.0" text="雷炎闪Y坐标" />
+      <TextField fx:id="fy" layoutX="125.0" layoutY="45.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label fx:id="fs" layoutX="15.0" layoutY="75.0" prefHeight="23.0" prefWidth="100.0" text="雷炎闪颜色" />
+      <TextField fx:id="fc" layoutX="125.0" layoutY="75.0" prefHeight="23.0" prefWidth="90.0" />
+      <Button fx:id="getf" layoutX="15.0" layoutY="105.0" mnemonicParsing="false" onMouseClicked="#getf" text="雷炎闪" />
+
+      <Label layoutX="230.0" layoutY="15.0" prefHeight="23.0" prefWidth="100.0" text="拔剑X坐标" />
+      <TextField fx:id="rx" layoutX="325.0" layoutY="15.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label layoutX="230.0" layoutY="45.0" prefHeight="23.0" prefWidth="100.0" text="拔剑Y坐标" />
+      <TextField fx:id="ry" layoutX="325.0" layoutY="45.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label fx:id="rs" layoutX="230.0" layoutY="75.0" prefHeight="23.0" prefWidth="100.0" text="拔剑颜色" />
+      <TextField fx:id="rc" layoutX="325.0" layoutY="75.0" prefHeight="23.0" prefWidth="90.0" />
+      <Button fx:id="getr" layoutX="230.0" layoutY="105.0" mnemonicParsing="false" onMouseClicked="#getr" text="拔剑" />
+
+      <Label layoutX="15.0" layoutY="145.0" prefHeight="23.0" prefWidth="100.0" text="觉醒雷炎闪X坐标" />
+      <TextField fx:id="sfx" layoutX="125.0" layoutY="145.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label layoutX="15.0" layoutY="175.0" prefHeight="23.0" prefWidth="100.0" text="觉醒雷炎闪Y坐标" />
+      <TextField fx:id="sfy" layoutX="125.0" layoutY="175.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label fx:id="sfs" layoutX="15.0" layoutY="205.0" prefHeight="23.0" prefWidth="100.0" text="觉醒雷炎闪颜色" />
+      <TextField fx:id="sfc" layoutX="125.0" layoutY="205.0" prefHeight="23.0" prefWidth="90.0" />
+      <Button fx:id="getsf" layoutX="15.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#getsf" text="觉醒雷炎闪" />
+
+      <Label layoutX="230.0" layoutY="145.0" prefHeight="23.0" prefWidth="100.0" text="觉醒拔剑X坐标" />
+      <TextField fx:id="srx" layoutX="325.0" layoutY="145.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label layoutX="230.0" layoutY="175.0" prefHeight="23.0" prefWidth="100.0" text="觉醒拔剑Y坐标" />
+      <TextField fx:id="sry" layoutX="325.0" layoutY="175.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label fx:id="srs" layoutX="230.0" layoutY="205.0" prefHeight="23.0" prefWidth="100.0" text="觉醒拔剑颜色" />
+      <TextField fx:id="src" layoutX="325.0" layoutY="205.0" prefHeight="23.0" prefWidth="90.0" />
+      <Button fx:id="getsr" layoutX="230.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#getsr" text="觉醒拔剑" />
+
+
+      <Label layoutX="15.0" layoutY="275.0" prefHeight="23.0" prefWidth="100.0" text="雷鸣斩X坐标" />
+      <TextField layoutX="125.0" layoutY="275.0" prefHeight="23.0" prefWidth="90.0" fx:id="xx" />
+      <Label layoutX="15.0" layoutY="305.0" prefHeight="23.0" prefWidth="100.0" text="雷鸣斩Y坐标" />
+      <TextField layoutX="125.0" layoutY="305.0" prefHeight="23.0" prefWidth="90.0" fx:id="xy" />
+      <Label layoutX="15.0" layoutY="335.0" prefHeight="23.0" prefWidth="100.0" text="雷鸣斩颜色" fx:id="xs" />
+      <TextField layoutX="125.0" layoutY="335.0" prefHeight="23.0" prefWidth="90.0" fx:id="xc" />
+      <Button fx:id="getx" layoutX="15.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#getx" text="雷鸣斩" />
+
+      <Label layoutX="230.0" layoutY="275.0" prefHeight="23.0" prefWidth="100.0" text="闪电BUFF X坐标" />
+      <TextField fx:id="buffx" layoutX="325.0" layoutY="275.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label layoutX="230.0" layoutY="305.0" prefHeight="23.0" prefWidth="100.0" text="闪电BUFF Y坐标" />
+      <TextField fx:id="buffy" layoutX="325.0" layoutY="305.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label fx:id="buffs" layoutX="230.0" layoutY="335.0" prefHeight="23.0" prefWidth="100.0" text="闪电BUFF 颜色" />
+      <TextField fx:id="buffc" layoutX="325.0" layoutY="335.0" prefHeight="23.0" prefWidth="90.0" />
+      <Button fx:id="getbuff" layoutX="230.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#getbuff" text="闪电BUFF" />
+
+      <Label layoutX="15.0" layoutY="400.0" prefHeight="23.0" prefWidth="100.0" text="天隙流光X坐标" />
+      <TextField fx:id="cx" layoutX="125.0" layoutY="400.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label layoutX="15.0" layoutY="435.0" prefHeight="23.0" prefWidth="100.0" text="天隙流光Y坐标" />
+      <TextField fx:id="cy" layoutX="125.0" layoutY="435.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label fx:id="cs" layoutX="15.0" layoutY="465.0" prefHeight="23.0" prefWidth="100.0" text="天隙流光颜色" />
+      <TextField fx:id="cc" layoutX="125.0" layoutY="465.0" prefHeight="23.0" prefWidth="90.0" />
+      <Button fx:id="getc" layoutX="15.0" layoutY="495.0" mnemonicParsing="false" onMouseClicked="#getc" text="天隙流光" />
+
+      <Label layoutX="230.0" layoutY="400.0" prefHeight="23.0" prefWidth="100.0" text="残月斩X坐标" />
+      <TextField fx:id="vx" layoutX="325.0" layoutY="400.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label layoutX="230.0" layoutY="435.0" prefHeight="23.0" prefWidth="100.0" text="残月斩Y坐标" />
+      <TextField fx:id="vy" layoutX="325.0" layoutY="435.0" prefHeight="23.0" prefWidth="90.0" />
+      <Label fx:id="vs" layoutX="230.0" layoutY="465.0" prefHeight="23.0" prefWidth="100.0" text="残月斩颜色" />
+      <TextField fx:id="vc" layoutX="325.0" layoutY="465.0" prefHeight="23.0" prefWidth="90.0" />
+      <Button fx:id="getv" layoutX="230.0" layoutY="495.0" mnemonicParsing="false" onMouseClicked="#getv" text="残月斩" />
+
+
+      <Button fx:id="saveButton" layoutX="15.0" layoutY="555.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="195.0" onMouseClicked="#save" text="保存" />
+      <Button fx:id="saveAndReturnButton" layoutX="230.0" layoutY="555.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="195.0" onMouseClicked="#saveAndReturn" text="保存/返回" />
+
+
+   </children>
+</AnchorPane>
