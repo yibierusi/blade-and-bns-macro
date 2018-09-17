@@ -1,11 +1,14 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="bns:jar">
+  <artifact type="jar" name="bns:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/bns_jar</output-path>
     <root id="archive" name="bns.jar">
       <element id="module-output" name="bns" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/res/jar/jintellitype-1.3.9.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/src/res/jar/jna.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/src/res/jar/jna-platform.jar" path-in-jar="/" />
       <element id="file-copy" path="$PROJECT_DIR$/ddxoft64.dll" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/melloware/jintellitype/JIntellitype.dll" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/melloware/jintellitype/JIntellitype64.dll" />
     </root>
   </artifact>
 </component>

@@ -61,26 +61,35 @@ public class Util {
      *
      * @return
      */
-    public static boolean pressKey(Robot robot, Entry entry, int ddCode) {
+    public static boolean existPressKey(Robot robot, Entry entry, int ddCode) {
         if (isEquals(robot, entry)) {
-            //robot.keyPress(keyCode);
-            DdXoft.INSTANCE.DD_key(ddCode, 1);
-            robot.delay(entry.press);
-            //robot.keyRelease(keyCode);
-            DdXoft.INSTANCE.DD_key(ddCode, 2);
-            robot.delay(entry.release);
-            return true;
+            return pressKey(robot, entry, ddCode);
         }
         return false;
     }
 
     /**
-     *  双C
+     * 直接按下某键
+     */
+    public static boolean pressKey(Robot robot, Entry entry, int ddCode) {
+        //robot.keyPress(keyCode);
+        DdXoft.INSTANCE.DD_key(ddCode, 1);
+        robot.delay(entry.press);
+        System.out.println("按下" + entry.press + "ms");
+        //robot.keyRelease(keyCode);
+        DdXoft.INSTANCE.DD_key(ddCode, 2);
+        robot.delay(entry.release);
+        System.out.println("释放" + entry.release + "ms");
+        return true;
+    }
+
+    /**
+     * 双C
      */
     public static boolean doubleC(Robot robot, Entry entry, int ddCode) {
-        boolean isPressKey = Util.pressKey(robot, entry, DDKeyEvent.C);
-        Util.pressKey(robot, entry, DDKeyEvent.F);
-        Util.pressKey(robot, entry, DDKeyEvent.C);
+        boolean isPressKey = Util.existPressKey(robot, entry, DDKeyEvent.C);
+        Util.existPressKey(robot, entry, DDKeyEvent.F);
+        Util.existPressKey(robot, entry, DDKeyEvent.C);
         return isPressKey;
     }
 
@@ -178,11 +187,11 @@ public class Util {
 
     }
 
-    public static Entry getEntry(String key, TextField x, TextField y, TextField c){
+    public static Entry getEntry(String key, TextField x, TextField y, TextField c) {
         Entry entry = new Entry();
         entry.x = Integer.parseInt(x.getText());
         entry.y = Integer.parseInt(y.getText());
-        String array[] = c.getText().split(Constant.COLOR_SPLIT.v(),-1);
+        String array[] = c.getText().split(Constant.COLOR_SPLIT.v(), -1);
         entry.r = Integer.parseInt(array[0]);
         entry.g = Integer.parseInt(array[1]);
         entry.b = Integer.parseInt(array[2]);
