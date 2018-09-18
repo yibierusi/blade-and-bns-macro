@@ -60,3 +60,4 @@ public interface DdXoft extends Library {
 //        功能： 直接输入键盘上可见字符和空格
 //        参数： 字符串, (注意，这个参数不是int32 类型)
 //        例子： DD_str("MyEmail@aa.bb.cc !@#$")
+

@@ -3,7 +3,6 @@ package bns.thread;
 import bns.comm.DDKeyEvent;
 import bns.comm.Entry;
 import bns.util.Util;
-import javafx.scene.paint.Color;
 
 import java.awt.*;
 import java.util.Map;
@@ -47,7 +46,7 @@ public class KeyThread extends Thread {
             isBuffExit = Util.isEquals(robot, keys.get("buff"));
             //有buff
             if (isBuffExit) {
-                //有觉醒雷炎闪 释放F R
+                //有觉醒雷炎闪 释放SF SR
                 isPressKey = Util.existPressKey(robot, keys.get("sf"), DDKeyEvent.F);
                 if (isPressKey) {
                     System.out.println("释放觉醒雷炎闪:" + isPressKey);
@@ -63,7 +62,7 @@ public class KeyThread extends Thread {
                     System.out.println("释放拔剑:unknown");
                     continue;
                 }
-                //无雷炎闪 释放R
+                //无雷炎闪 释放SR
                 isPressKey = Util.existPressKey(robot, keys.get("sr"), DDKeyEvent.R);
                 if (isPressKey) {
                     System.out.println("释放觉醒拔剑:" + isPressKey);
@@ -76,7 +75,7 @@ public class KeyThread extends Thread {
                     continue;
                 }
             } else {
-                //无雷炎闪 释放R
+                //无雷炎闪 释放SR
                 isPressKey = Util.existPressKey(robot, keys.get("sr"), DDKeyEvent.R);
                 if (isPressKey) {
                     System.out.println("释放觉醒拔剑:" + isPressKey);

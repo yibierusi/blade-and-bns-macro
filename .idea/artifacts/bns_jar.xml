@@ -7,8 +7,6 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/src/res/jar/jna.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/src/res/jar/jna-platform.jar" path-in-jar="/" />
       <element id="file-copy" path="$PROJECT_DIR$/ddxoft64.dll" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/com/melloware/jintellitype/JIntellitype.dll" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/com/melloware/jintellitype/JIntellitype64.dll" />
     </root>
   </artifact>
 </component>

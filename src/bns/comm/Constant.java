@@ -16,6 +16,7 @@ public enum Constant {
     START_SCRIPT(10, "1.启动脚本(F11)"),
     STOP_SCRIPT(11, "1.停止脚本(F11)");
 
+
     Constant(int k, String v) {
         this.k = k;
         this.v = v;

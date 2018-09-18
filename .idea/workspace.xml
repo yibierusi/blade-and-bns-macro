@@ -7,14 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/jar/jintellitype-1.3.9.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/melloware/jintellitype/JIntellitype.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/melloware/jintellitype/JIntellitype64.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bns_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bns_jar.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/bns_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ddxoft64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bns.iml" afterPath="$PROJECT_DIR$/bns.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config" afterPath="$PROJECT_DIR$/config" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bns/controller/BnsController.java" afterPath="$PROJECT_DIR$/src/bns/controller/BnsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bns/comm/Constant.java" afterPath="$PROJECT_DIR$/src/bns/comm/Constant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bns/comm/DDKeyEvent.java" afterPath="$PROJECT_DIR$/src/bns/comm/DDKeyEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bns/comm/DdXoft.java" afterPath="$PROJECT_DIR$/src/bns/comm/DdXoft.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bns/controller/SkillController.java" afterPath="$PROJECT_DIR$/src/bns/controller/SkillController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bns/thread/KeyThread.java" afterPath="$PROJECT_DIR$/src/bns/thread/KeyThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bns/util/Util.java" afterPath="$PROJECT_DIR$/src/bns/util/Util.java" />
@@ -83,79 +83,21 @@
       <file leaf-file-name="Util.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bns/util/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="73" column="74" lean-forward="false" selection-start-line="73" selection-start-column="74" selection-end-line="73" selection-end-column="74" />
+            <state relative-caret-position="1875">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6167#6175#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SkillApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bns/application/SkillApplication.java">
+      <file leaf-file-name="Entry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bns/comm/Entry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="21" column="9" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="21" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="skill.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bns/view/skill.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1525">
-              <caret line="61" column="97" lean-forward="false" selection-start-line="61" selection-start-column="97" selection-end-line="61" selection-end-column="97" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkillController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bns/controller/SkillController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6475">
-              <caret line="292" column="9" lean-forward="false" selection-start-line="292" selection-start-column="9" selection-end-line="292" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BnsController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/bns/controller/BnsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bns/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+            <state relative-caret-position="401">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,8 +106,20 @@
       <file leaf-file-name="DdXoft.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bns/comm/DdXoft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+            <state relative-caret-position="800">
+              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DDKeyEvent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bns/comm/DDKeyEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -174,11 +128,41 @@
       <file leaf-file-name="KeyThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bns/thread/KeyThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="79" column="36" lean-forward="false" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+            <state relative-caret-position="86">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bns/comm/Constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SkillController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bns/controller/SkillController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bns/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -266,20 +250,21 @@
         <option value="$PROJECT_DIR$/src/bns/DdXoftTest.java" />
         <option value="$PROJECT_DIR$/src/bns/dll.java" />
         <option value="$PROJECT_DIR$/src/bns/dll/DdXoftTest.java" />
-        <option value="$PROJECT_DIR$/src/bns/comm/DDKeyEvent.java" />
         <option value="$PROJECT_DIR$/src/bns/dll/DdXoft.java" />
         <option value="$PROJECT_DIR$/src/bns/fxml/bns.fxml" />
         <option value="$PROJECT_DIR$/src/bns/Main.java" />
-        <option value="$PROJECT_DIR$/src/bns/comm/Constant.java" />
         <option value="$PROJECT_DIR$/src/bns/comm/Entry.java" />
         <option value="$PROJECT_DIR$/src/bns/application/SkillApplication.java" />
         <option value="$PROJECT_DIR$/src/bns/view/skill.fxml" />
-        <option value="$PROJECT_DIR$/config" />
-        <option value="$PROJECT_DIR$/src/bns/controller/SkillController.java" />
-        <option value="$PROJECT_DIR$/src/bns/thread/KeyThread.java" />
-        <option value="$PROJECT_DIR$/src/bns/comm/DdXoft.java" />
-        <option value="$PROJECT_DIR$/src/bns/util/Util.java" />
         <option value="$PROJECT_DIR$/src/bns/controller/BnsController.java" />
+        <option value="$PROJECT_DIR$/src/bns/comm/DDKeyEvent.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/bns/util/Util.java" />
+        <option value="$PROJECT_DIR$/config" />
+        <option value="$PROJECT_DIR$/src/bns/comm/DdXoft.java" />
+        <option value="$PROJECT_DIR$/src/bns/thread/KeyThread.java" />
+        <option value="$PROJECT_DIR$/src/bns/comm/Constant.java" />
+        <option value="$PROJECT_DIR$/src/bns/controller/SkillController.java" />
       </list>
     </option>
   </component>
@@ -297,8 +282,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="237" />
+    <option name="y" value="134" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -377,7 +362,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -389,24 +373,6 @@
             <path>
               <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
               <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="bns_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -414,20 +380,6 @@
               <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bns" type="462c0819:PsiDirectoryNode" />
-              <item name="comm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bns" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
@@ -438,29 +390,15 @@
             </path>
             <path>
               <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bns" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jintellitype" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blade-and-bns-macro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blade-and-bns-macro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,28 +417,28 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ddxoft64.dll" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\repository\my-github\bns\blade-and-bns-macro\src\main\resources\win32-x86-64" />
+      <recent name="D:\repository\my-github\bns\blade-and-bns-macro" />
+      <recent name="D:\repository\my-github\bns\blade-and-bns-macro\out\production\bns\bns\application" />
       <recent name="D:\repository\my-github\bns\blade-and-bns-macro\src\com\melloware\jintellrtpe" />
       <recent name="D:\repository\my-github\bns\blade-and-bns-macro\src\res\jar" />
-      <recent name="D:\repository\my-github\bns\blade-and-bns-macro" />
-      <recent name="D:\repository\bns\src\bns\resource\jar" />
-      <recent name="D:\repository\bns" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="bns.controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\repository\my-github\bns\blade-and-bns-macro\src\res\dll" />
+      <recent name="D:\repository\my-github\bns\blade-and-bns-macro\src" />
+      <recent name="D:\repository\my-github\bns\blade-and-bns-macro\src\bns\comm" />
       <recent name="D:\repository\bns" />
       <recent name="D:\repository\bns\src\bns\resource\jar" />
-      <recent name="D:\repository\bns\src\bns\jar\resource" />
-      <recent name="D:\repository\bns\src\bns\resource" />
-      <recent name="D:\repository\bns\src\bns\dll" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -516,68 +454,14 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="CT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="CT" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="bns" />
-      <envs />
-    </configuration>
-    <configuration name="DdXoft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="bns.comm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="bns.comm.DdXoft" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="bns" />
-      <envs />
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="bns.controller.*" />
+          <option name="PATTERN" value="bns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="bns.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="bns" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="MainDll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="bns.comm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="bns.MainDll" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -683,16 +567,9 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DdXoft" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CT" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MainDll" />
-    </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.MainDll" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CT" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -721,12 +598,13 @@
       <workItem from="1535450209020" duration="2604000" />
       <workItem from="1536289012705" duration="12599000" />
       <workItem from="1537164678994" duration="2022000" />
-      <workItem from="1537166832993" duration="1228000" />
+      <workItem from="1537166832993" duration="9580000" />
+      <workItem from="1537232110063" duration="12592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114735000" />
+    <option name="totallyTimeSpent" value="135679000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -749,18 +627,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3080357" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4017857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20042644" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20255864" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3560268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -788,7 +666,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/bns/util/Util.java</url>
+          <line>191</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -797,18 +683,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/bns/img/fj.png" />
-    <entry file="file://$PROJECT_DIR$/src/bns/img/z.png" />
-    <entry file="file://$PROJECT_DIR$/src/bns/img/闪电.png" />
-    <entry file="jar://D:/app/Java/jdk1.8.0_151/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="991" column="16" lean-forward="false" selection-start-line="991" selection-start-column="16" selection-end-line="991" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bns/MainDll.java" />
-    <entry file="file://$PROJECT_DIR$/src/bns/dll.java" />
     <entry file="jar://D:/app/Java/jdk1.8.0_151/src.zip!/java/awt/event/KeyEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -824,7 +698,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/ddxoft64.dll" />
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
     <entry file="jar://$PROJECT_DIR$/src/res/jar/jna-platform.jar!/com/sun/jna/platform/FileUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -832,7 +705,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ddxoft64.dll">
+    <entry file="file://$PROJECT_DIR$/src/res/dll/ddxoft64.dll">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -993,14 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bns/comm/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bns/view/bns.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1012,23 +877,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bns/comm/Entry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JIntellitype.dll" />
-    <entry file="file://$PROJECT_DIR$/src/bns/comm/DDKeyEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/melloware/jintellitype/JIntellitype.dll">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1041,7 +890,7 @@
         <state relative-caret-position="375">
           <caret line="21" column="9" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="21" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1057,33 +906,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bns/controller/SkillController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6475">
-          <caret line="292" column="9" lean-forward="false" selection-start-line="292" selection-start-column="9" selection-end-line="292" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/app/Java/jdk1.8.0_151/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="139" column="19" lean-forward="false" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bns/comm/DdXoft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -1092,16 +918,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/bns/bns/application/DDTest.class" />
+    <entry file="file://$USER_HOME$/Desktop/备份/DDXoft/DD81010/示例源代码/App_java/src/com/ddxoft/DDTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bns/controller/BnsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="85" column="21" lean-forward="false" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
           <folding>
-            <element signature="e#0#1392#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2474#2475#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bns/thread/KeyThread.java">
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="79" column="36" lean-forward="false" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+        <state relative-caret-position="25">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddxoft64.dll">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sun/jna/win32-x86-64/ddxoft64.dll">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bns/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/app/Java/jdk1.8.0_151/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="395" column="10" lean-forward="false" selection-start-line="395" selection-start-column="10" selection-end-line="395" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bns/comm/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/bns_jar/config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bns/comm/DdXoft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1110,30 +1016,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bns/util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="73" column="74" lean-forward="false" selection-start-line="73" selection-start-column="74" selection-end-line="73" selection-end-column="74" />
+        <state relative-caret-position="1875">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6167#6175#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bns/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/bns/comm/DDKeyEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        <state relative-caret-position="75">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bns/controller/BnsController.java">
+    <entry file="file://$PROJECT_DIR$/src/bns/thread/KeyThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="86">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bns/comm/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bns/controller/SkillController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1143,7 +1064,14 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="jpa-descriptors" />
+              <type id="library" />
+              <type id="artifact" />
+              <type id="javaee-facet-resources" />
+            </show-content>
+          </artifact-editor>
           <last-edited>bns:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">

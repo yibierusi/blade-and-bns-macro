@@ -2,8 +2,6 @@ package bns.controller;
 
 import bns.comm.Entry;
 import bns.util.Util;
-import com.melloware.jintellitype.HotkeyListener;
-import com.melloware.jintellitype.JIntellitype;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -188,7 +186,7 @@ public class SkillController implements Initializable {
         newKeys.put("buff", Util.getEntry("buff", buffx, buffy, buffc));
         newKeys.put("c", Util.getEntry("c", cx, cy, cc));
         newKeys.put("v", Util.getEntry("v", vx, vy, vc));
-        keys = newKeys;
+        keys = Util.removeMapEmptyValue(newKeys);
     }
 
 

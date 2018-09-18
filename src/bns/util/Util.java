@@ -9,8 +9,7 @@ import javafx.scene.paint.Color;
 
 import java.awt.Robot;
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Auther: zhouhy
@@ -180,7 +179,9 @@ public class Util {
         }
 
         for (Map.Entry<String, Entry> entry : keys.entrySet()) {
-            ps.println(entry.getValue().toString());
+            if (entry != null) {
+                ps.println(entry.getValue().toString());
+            }
         }
         ps.close();
         System.out.println("数据保存完成");
@@ -189,13 +190,49 @@ public class Util {
 
     public static Entry getEntry(String key, TextField x, TextField y, TextField c) {
         Entry entry = new Entry();
-        entry.x = Integer.parseInt(x.getText());
-        entry.y = Integer.parseInt(y.getText());
-        String array[] = c.getText().split(Constant.COLOR_SPLIT.v(), -1);
-        entry.r = Integer.parseInt(array[0]);
-        entry.g = Integer.parseInt(array[1]);
-        entry.b = Integer.parseInt(array[2]);
-        entry.key = key;
+        try {
+            entry.x = Integer.parseInt(x.getText());
+            entry.y = Integer.parseInt(y.getText());
+            String array[] = c.getText().split(Constant.COLOR_SPLIT.v(), -1);
+            entry.r = Integer.parseInt(array[0]);
+            entry.g = Integer.parseInt(array[1]);
+            entry.b = Integer.parseInt(array[2]);
+            entry.key = key;
+        } catch (Exception e) {
+            System.out.println(key + "键数据格式有问题，未保存");
+            return null;
+        }
         return entry;
+    }
+
+    /**
+     * 移除字符串第一个字符
+     */
+    public static String removeFirstChar(String str) {
+        if (str == null || "".equals(str)) {
+            return "";
+        }
+        return str.substring(0, str.length());
+    }
+
+    /**
+     * 移除map中空的value对象
+     * @param paramMap
+     * @return
+     */
+    public static Map<String, Entry> removeMapEmptyValue(Map<String, Entry> paramMap) {
+        Set<String> set = paramMap.keySet();
+        Iterator<String> it = set.iterator();
+        List<String> listKey = new ArrayList<String>();
+        while (it.hasNext()) {
+            String str = it.next();
+            if (paramMap.get(str) == null || "".equals(paramMap.get(str))) {
+                listKey.add(str);
+            }
+        }
+        for (String key : listKey) {
+            paramMap.remove(key);
+        }
+        return paramMap;
     }
 }

@@ -12,4 +12,7 @@ public class DDKeyEvent {
     public static final int X              = 502;
     public static final int C              = 503;
     public static final int V              = 504;
+
+    public static void main(String[] args) {
+    }
 }
