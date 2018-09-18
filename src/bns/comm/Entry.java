@@ -17,6 +17,7 @@ public class Entry {
     public int press;
     public int release;
     public String key;
+    public String skill;
 
     public Entry() {
         press = 50;
@@ -37,20 +38,20 @@ public class Entry {
     public Entry(String str) {
         str = str.trim();
         if (Util.isEmpty(str)) {
-            System.out.println("实体类参数不能为空");
+            System.out.println(UnifyEnum.PARAMETER_IS_EMPTY.v());
         }
-        String[] array = str.split(Constant.CONFIG_SPLIT.v(), -1);
+        String[] array = str.split(UnifyEnum.CONFIG_SPLIT.v(), -1);
         if (array.length != 2) {
-            System.out.println("实体类初始化出错");
+            System.out.println(UnifyEnum.ENTRY_INIT_ERROR.v());
         }
         this.key = array[0];
         setFull(array[1]);
     }
 
     public void setFull(String str) {
-        String[] array = str.split(Constant.COLOR_SPLIT.v(), -1);
-        if (array.length != 7) {
-            System.out.println("实体类初始化出错");
+        String[] array = str.split(UnifyEnum.COLOR_SPLIT.v(), -1);
+        if (array.length != 8) {
+            System.out.println(UnifyEnum.ENTRY_INIT_ERROR.v());
         }
         this.x = Integer.parseInt(array[0]);
         this.y = Integer.parseInt(array[1]);
@@ -59,13 +60,14 @@ public class Entry {
         this.b = Integer.parseInt(array[4]);
         this.press = Integer.parseInt(array[5]);
         this.release = Integer.parseInt(array[6]);
+        this.skill = array[7];
     }
 
     @Override
     public String toString() {
-        return key + Constant.CONFIG_SPLIT.v()
-                + x + Constant.COLOR_SPLIT.v() + y + Constant.COLOR_SPLIT.v()
-                + r + Constant.COLOR_SPLIT.v() + g + Constant.COLOR_SPLIT.v() + b + Constant.COLOR_SPLIT.v()
-                + press + Constant.COLOR_SPLIT.v() + release;
+        return key + UnifyEnum.CONFIG_SPLIT.v()
+                + x + UnifyEnum.COLOR_SPLIT.v() + y + UnifyEnum.COLOR_SPLIT.v()
+                + r + UnifyEnum.COLOR_SPLIT.v() + g + UnifyEnum.COLOR_SPLIT.v() + b + UnifyEnum.COLOR_SPLIT.v()
+                + press + UnifyEnum.COLOR_SPLIT.v() + release + UnifyEnum.COLOR_SPLIT.v() + skill;
     }
 }

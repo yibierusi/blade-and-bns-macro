@@ -1,6 +1,6 @@
 package bns.application;
 
-import bns.comm.Constant;
+import bns.comm.UnifyEnum;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -26,11 +26,11 @@ public class SkillApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource(Constant.SKILL.v()));
+        Parent root = FXMLLoader.load(getClass().getResource(UnifyEnum.SKILL.v()));
         primaryStage.setTitle("Skill");
         primaryStage.setScene(new Scene(root, 435, 600));
         primaryStage.getIcons().add(new Image(
-                SkillApplication.class.getResourceAsStream(Constant.JAVA.v())));
+                SkillApplication.class.getResourceAsStream(UnifyEnum.JAVA.v())));
         primaryStage.setAlwaysOnTop(true);//窗口总是在最前面
         primaryStage.setResizable(false);//禁止改变窗口大小
         primaryStage.show();

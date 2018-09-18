@@ -1,7 +1,7 @@
 package bns.controller;
 
 import bns.application.SkillApplication;
-import bns.comm.Constant;
+import bns.comm.UnifyEnum;
 import bns.thread.KeyThread;
 import com.melloware.jintellitype.HotkeyListener;
 import com.melloware.jintellitype.JIntellitype;
@@ -45,27 +45,27 @@ public class BnsController implements Initializable {
      */
     public void startAndStop() {
         if (keyThread == null) {
+            System.out.println(UnifyEnum.SCRIPT_STARTUP.v());
             keyThread = new KeyThread();
             keyThread.start();
             Platform.runLater(new Runnable() {
                 @Override
                 public void run() {
                     //更新JavaFX的主线程的代码放在此处
-                    scriptControlButton.setText(Constant.STOP_SCRIPT.v());
+                    scriptControlButton.setText(UnifyEnum.STOP_SCRIPT.v());
                 }
             });
-            System.out.println("脚本启动中...");
             return;
         }
+        System.out.println(UnifyEnum.SCRIPT_STOPUP.v());
         keyThread.kill();
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
                 //更新JavaFX的主线程的代码放在此处
-                scriptControlButton.setText(Constant.START_SCRIPT.v());
+                scriptControlButton.setText(UnifyEnum.START_SCRIPT.v());
             }
         });
-        System.out.println("脚本停止中...");
         keyThread = null;
     }
 
@@ -78,6 +78,7 @@ public class BnsController implements Initializable {
     }
 
     public void addHotKeyListener(){
+        System.out.println(UnifyEnum.ADD_HOT_KEY_LISTENER.v());
         //第一步：注册热键，第一个参数表示该热键的标识，第二个参数表示组合键，如果没有则为0，第三个参数为定义的主要热键
         JIntellitype.getInstance().registerHotKey(0, JIntellitype.MOD_ALT, (int)'S');
 
@@ -95,7 +96,9 @@ public class BnsController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         keyThread = null;
+        System.out.println(UnifyEnum.INITING.v());
         addHotKeyListener();
-        System.out.println("initialize...");
+
+
     }
 }

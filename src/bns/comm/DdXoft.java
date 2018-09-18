@@ -4,7 +4,7 @@ import com.sun.jna.Library;
 import com.sun.jna.Native;
 
 public interface DdXoft extends Library {
-    DdXoft INSTANCE = (DdXoft) Native.loadLibrary("ddxoft64", DdXoft.class);
+    DdXoft INSTANCE = (DdXoft) Native.loadLibrary(UnifyEnum.DDXOFT64.v(), DdXoft.class);
 
     //64位JAVA调用*64.dll, 32位调用*32.dll 。与系统本身位数无关。、
     int DD_mov(int x, int y);//绝对移动

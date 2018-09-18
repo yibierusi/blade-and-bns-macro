@@ -1,7 +1,9 @@
 package bns.thread;
 
+import bns.comm.UnifyEnum;
 import bns.comm.DDKeyEvent;
 import bns.comm.Entry;
+import bns.comm.SkillEnum;
 import bns.util.Util;
 
 import java.awt.*;
@@ -38,84 +40,49 @@ public class KeyThread extends Thread {
     @Override
     public void run() {
         if (keys == null || keys.size() == 0) {
-            System.out.println("keyMap 为空");
+            System.out.println(UnifyEnum.KEY_MAP_IS_EMPTY.v());
         }
-        System.out.println("脚本已启动。");
+        System.out.println(UnifyEnum.SCRIPT_STARTED.v());
         //线程是否存活
         while (state) {
-            isBuffExit = Util.isEquals(robot, keys.get("buff"));
+            isBuffExit = Util.isEquals(robot, keys.get(SkillEnum.BUFF.k()));
             //有buff
             if (isBuffExit) {
                 //有觉醒雷炎闪 释放SF SR
-                isPressKey = Util.existPressKey(robot, keys.get("sf"), DDKeyEvent.F);
+                isPressKey = Util.existPressKey(robot, keys.get(SkillEnum.SF.k()), DDKeyEvent.F);
                 if (isPressKey) {
-                    System.out.println("释放觉醒雷炎闪:" + isPressKey);
-                    isPressKey = Util.pressKey(robot, keys.get("sr"), DDKeyEvent.R);
-                    System.out.println("释放觉醒拔剑:unknown");
+                    isPressKey = Util.pressKey(robot, keys.get(SkillEnum.SR.k()), DDKeyEvent.R);
                     continue;
                 }
                 //有雷炎闪  释放F R
-                isPressKey = Util.existPressKey(robot, keys.get("f"), DDKeyEvent.F);
+                isPressKey = Util.existPressKey(robot, keys.get(SkillEnum.F.k()), DDKeyEvent.F);
                 if (isPressKey) {
-                    System.out.println("释放雷炎闪:" + isPressKey);
-                    isPressKey = Util.pressKey(robot, keys.get("r"), DDKeyEvent.R);
-                    System.out.println("释放拔剑:unknown");
+                    isPressKey = Util.pressKey(robot, keys.get(SkillEnum.R.k()), DDKeyEvent.R);
                     continue;
                 }
                 //无雷炎闪 释放SR
-                isPressKey = Util.existPressKey(robot, keys.get("sr"), DDKeyEvent.R);
+                isPressKey = Util.existPressKey(robot, keys.get(SkillEnum.SR.k()), DDKeyEvent.R);
                 if (isPressKey) {
-                    System.out.println("释放觉醒拔剑:" + isPressKey);
                     continue;
                 }
                 //无雷炎闪 释放R
-                isPressKey = Util.existPressKey(robot, keys.get("r"), DDKeyEvent.R);
+                isPressKey = Util.existPressKey(robot, keys.get(SkillEnum.R.k()), DDKeyEvent.R);
                 if (isPressKey) {
-                    System.out.println("释放拔剑:" + isPressKey);
                     continue;
                 }
             } else {
                 //无雷炎闪 释放SR
-                isPressKey = Util.existPressKey(robot, keys.get("sr"), DDKeyEvent.R);
+                isPressKey = Util.existPressKey(robot, keys.get(SkillEnum.SR.k()), DDKeyEvent.R);
                 if (isPressKey) {
-                    System.out.println("释放觉醒拔剑:" + isPressKey);
                     continue;
                 }
-                isPressKey = Util.existPressKey(robot, keys.get("r"), DDKeyEvent.R);
+                isPressKey = Util.existPressKey(robot, keys.get(SkillEnum.R.k()), DDKeyEvent.R);
                 if (isPressKey) {
-                    System.out.println("释放拔剑:" + isPressKey);
                     continue;
                 }
-//                //无buff
-//                //有觉醒雷炎闪 释放F
-//                isPressKey = Util.existPressKey(robot, keys.get("sf"), DDKeyEvent.F);
-//                if (isPressKey) {
-//                    System.out.println("释放觉醒雷炎闪");
-//                }else{
-//                    //有雷炎闪  释放F
-//                    isPressKey = Util.existPressKey(robot, keys.get("f"), DDKeyEvent.F);
-//                    if (isPressKey) {
-//                        System.out.println("释放雷炎闪");
-//                    }
-//                }
-//                isPressKey = Util.existPressKey(robot, keys.get("c"), DDKeyEvent.C);
-//                if (isPressKey) {
-//                    System.out.println("释放天隙流光");
-//                    continue;
-//                }
-//                isPressKey = Util.existPressKey(robot, keys.get("v"), DDKeyEvent.V);
-//                if (isPressKey) {
-//                    System.out.println("释放残月斩");
-//                    continue;
-//                }
-//                isPressKey = Util.existPressKey(robot, keys.get("x"), DDKeyEvent.X);
-//                if (isPressKey) {
-//                    System.out.println("释放雷鸣斩");
-//                    continue;
-//                }
             }
         }
-        System.out.println("脚本已停止。");
+        System.out.println(UnifyEnum.SCRIPT_STOPPED.v());
     }
 
     public static void kill() {

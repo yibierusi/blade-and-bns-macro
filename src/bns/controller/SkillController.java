@@ -1,6 +1,9 @@
 package bns.controller;
 
+import bns.comm.SkillConstant;
+import bns.comm.UnifyEnum;
 import bns.comm.Entry;
+import bns.comm.SkillEnum;
 import bns.util.Util;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -114,7 +117,7 @@ public class SkillController implements Initializable {
                 point = MouseInfo.getPointerInfo().getLocation();
                 java.awt.Color color = robot.getPixelColor(point.x, point.y);
                 if (current != null && !"".equals(current)) {
-                    System.out.println("保存按键信息中...");
+                    System.out.println(UnifyEnum.SAVING_KEY_INFO.v());
                     keyDataHandle(point.x, point.y, color.getRed(), color.getGreen(), color.getBlue());
                 }
             } catch (Exception ex) {
@@ -128,7 +131,7 @@ public class SkillController implements Initializable {
      */
     public void keyDataHandle(int x, int y, int red, int green, int blue) {
         if (red > 255 || green > 255 || blue > 255) {
-            System.out.println("颜色格式不正确");
+            System.out.println(UnifyEnum.COLOR_FORMAT_ERROR.v());
             return;
         }
 
@@ -136,29 +139,29 @@ public class SkillController implements Initializable {
         keys.put(current, entry);
 
         switch (current) {
-            case "f":
-                fillData(fx, fy, fc, fs, "f");
+            case SkillConstant.F:
+                fillData(fx, fy, fc, fs, SkillEnum.F.k());
                 break;
-            case "r":
-                fillData(rx, ry, rc, rs, "r");
+            case SkillConstant.R:
+                fillData(rx, ry, rc, rs, SkillEnum.R.k());
                 break;
-            case "sf":
-                fillData(sfx, sfy, sfc, sfs, "sf");
+            case SkillConstant.SF:
+                fillData(sfx, sfy, sfc, sfs, SkillEnum.SF.k());
                 break;
-            case "sr":
-                fillData(srx, sry, src, srs, "sr");
+            case SkillConstant.SR:
+                fillData(srx, sry, src, srs, SkillEnum.SR.k());
                 break;
-            case "x":
-                fillData(xx, xy, xc, xs, "x");
+            case SkillConstant.X:
+                fillData(xx, xy, xc, xs, SkillEnum.X.k());
                 break;
-            case "buff":
-                fillData(buffx, buffy, buffc, buffs, "buff");
+            case SkillConstant.BUFF:
+                fillData(buffx, buffy, buffc, buffs, SkillEnum.BUFF.k());
                 break;
-            case "c":
-                fillData(cx, cy, cc, cs, "c");
+            case SkillConstant.C:
+                fillData(cx, cy, cc, cs, SkillEnum.C.k());
                 break;
-            case "v":
-                fillData(vx, vy, vc, vs, "v");
+            case SkillConstant.V:
+                fillData(vx, vy, vc, vs, SkillEnum.V.k());
                 break;
             default:
                 return;
@@ -178,14 +181,14 @@ public class SkillController implements Initializable {
      */
     public void getNewestKeys() {
         Map<String, Entry> newKeys = new HashMap<>();
-        newKeys.put("f", Util.getEntry("f", fx, fy, fc));
-        newKeys.put("sf", Util.getEntry("sf", sfx, sfy, sfc));
-        newKeys.put("r", Util.getEntry("r", rx, ry, rc));
-        newKeys.put("sr", Util.getEntry("sr", srx, sry, src));
-        newKeys.put("x", Util.getEntry("x", xx, xy, xc));
-        newKeys.put("buff", Util.getEntry("buff", buffx, buffy, buffc));
-        newKeys.put("c", Util.getEntry("c", cx, cy, cc));
-        newKeys.put("v", Util.getEntry("v", vx, vy, vc));
+        newKeys.put(SkillEnum.F.k(), Util.getEntry(SkillEnum.F, fx, fy, fc));
+        newKeys.put(SkillEnum.SF.k(), Util.getEntry(SkillEnum.SF, sfx, sfy, sfc));
+        newKeys.put(SkillEnum.R.k(), Util.getEntry(SkillEnum.R, rx, ry, rc));
+        newKeys.put(SkillEnum.SR.k(), Util.getEntry(SkillEnum.SR, srx, sry, src));
+        newKeys.put(SkillEnum.X.k(), Util.getEntry(SkillEnum.X, xx, xy, xc));
+        newKeys.put(SkillEnum.BUFF.k(), Util.getEntry(SkillEnum.BUFF, buffx, buffy, buffc));
+        newKeys.put(SkillEnum.C.k(), Util.getEntry(SkillEnum.C, cx, cy, cc));
+        newKeys.put(SkillEnum.V.k(), Util.getEntry(SkillEnum.V, vx, vy, vc));
         keys = Util.removeMapEmptyValue(newKeys);
     }
 
@@ -205,17 +208,17 @@ public class SkillController implements Initializable {
      * 界面填充数据
      */
     public void fillFullData() {
-        fillData(fx, fy, fc, fs, "f");
-        fillData(rx, ry, rc, rs, "r");
+        fillData(fx, fy, fc, fs, SkillEnum.F.k());
+        fillData(rx, ry, rc, rs, SkillEnum.R.k());
 
-        fillData(sfx, sfy, sfc, sfs, "sf");
-        fillData(srx, sry, src, srs, "sr");
+        fillData(sfx, sfy, sfc, sfs, SkillEnum.SF.k());
+        fillData(srx, sry, src, srs, SkillEnum.SR.k());
 
-        fillData(xx, xy, xc, xs, "x");
-        fillData(buffx, buffy, buffc, buffs, "buff");
+        fillData(xx, xy, xc, xs, SkillEnum.X.k());
+        fillData(buffx, buffy, buffc, buffs, SkillEnum.BUFF.k());
 
-        fillData(cx, cy, cc, cs, "c");
-        fillData(vx, vy, vc, vs, "v");
+        fillData(cx, cy, cc, cs, SkillEnum.C.k());
+        fillData(vx, vy, vc, vs, SkillEnum.V.k());
     }
 
     /**
@@ -241,42 +244,42 @@ public class SkillController implements Initializable {
      */
     @FXML
     public void getf(MouseEvent event) {
-        current = "f";
+        current = SkillEnum.F.k();
     }
 
     @FXML
     public void getr(MouseEvent event) {
-        current = "r";
+        current = SkillEnum.R.k();
     }
 
     @FXML
     public void getsf(MouseEvent event) {
-        current = "sf";
+        current = SkillEnum.SF.k();
     }
 
     @FXML
     public void getsr(MouseEvent event) {
-        current = "sr";
+        current = SkillEnum.SR.k();
     }
 
     @FXML
     public void getx(MouseEvent event) {
-        current = "x";
+        current = SkillEnum.X.k();
     }
 
     @FXML
     public void getbuff(MouseEvent event) {
-        current = "buff";
+        current = SkillEnum.BUFF.k();
     }
 
     @FXML
     public void getc(MouseEvent event) {
-        current = "c";
+        current = SkillEnum.C.k();
     }
 
     @FXML
     public void getv(MouseEvent event) {
-        current = "v";
+        current = SkillEnum.V.k();
     }
 
 
@@ -287,18 +290,18 @@ public class SkillController implements Initializable {
         try {
             robot = new Robot();
         } catch (AWTException e) {
-            System.out.println("初始化Robot出错");
+            System.out.println(UnifyEnum.ROBOT_INIT_ERROR.v());
         }
     }
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        System.out.println("正在初始化...");
+        System.out.println(UnifyEnum.INITING.v());
         init();
-        System.out.println("正在读取配置...");
+        System.out.println(UnifyEnum.READING_CONFIG.v());
         keys = Util.loadingConfigFiles();
-        System.out.println("正在填充数据...");
+        System.out.println(UnifyEnum.FILLING_DATA.v());
         fillFullData();
     }
 
